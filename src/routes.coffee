@@ -1,7 +1,3 @@
-_ = require 'underscore'
-Hoek = require "hoek"
-Boom = require 'boom'
-Joi = require "joi"
 
 module.exports = (plugin) ->
   plugin.route
