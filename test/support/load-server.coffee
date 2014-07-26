@@ -10,9 +10,4 @@ module.exports = loadServer = (cb) ->
     ]
 
     server.pack.register pluginConf, (err) ->
-
-      console.log "PLUGINS 1"
-      console.log "GOT #{k}" for k in _.keys(server.pack.plugins)
-        
-
       cb err,server

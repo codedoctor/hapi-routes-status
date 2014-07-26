@@ -1,9 +1,9 @@
-#routes = require './routes'
+routes = require './routes'
 
 module.exports.register = (plugin, options = {}, cb) ->
-  #routes plugin
+  routes plugin
 
-  plugin.expose 'dummy', {} # Needed because of a bug in the hapi code, otherwise pack.plugins would not be set.
+  plugin.expose 'dummy', {} if process.env.NODE_ENV is 'test'
 
   cb()
 
