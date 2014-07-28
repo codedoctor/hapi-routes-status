@@ -28,7 +28,6 @@ module.exports = (grunt) ->
     env:
       test:
         NODE_ENV: "test"
-        MONGODBURL: "mongodb://localhost/fanignite-api-test"
 
     mochaTest:
       test:
@@ -68,6 +67,7 @@ module.exports = (grunt) ->
 
   grunt.registerTask 'deploy', [
     'test'
+    'release'
   ]
 
   grunt.registerTask 'default', ['build', 'watch']
