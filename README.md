@@ -1,3 +1,9 @@
+[![Build Status](https://travis-ci.org/codedoctor/hapi-routes-status.svg?branch=master)](https://travis-ci.org/codedoctor/hapi-routes-status)
+
+[![Coverage Status](https://img.shields.io/coveralls/codedoctor/hapi-routes-status.svg)](https://coveralls.io/r/codedoctor/hapi-routes-status)
+
+[![NPM Version](http://img.shields.io/npm/v/hapi-routes-status.svg)](https://www.npmjs.org/package/hapi-routes-status)
+
 (C) 2014 Martin Wawrusch
 
 Exposes a /status route which returns a json object similar to this:
