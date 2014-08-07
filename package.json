@@ -1,6 +1,6 @@
 {
   "name": "hapi-routes-status",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": false,
   "main": "lib/index.js",
   "repository": {
