@@ -2,15 +2,10 @@
 [![Coverage Status](https://img.shields.io/coveralls/codedoctor/hapi-routes-status.svg)](https://coveralls.io/r/codedoctor/hapi-routes-status)
 [![NPM Version](http://img.shields.io/npm/v/hapi-routes-status.svg)](https://www.npmjs.org/package/hapi-routes-status)
 [![Dependency Status](https://gemnasium.com/codedoctor/hapi-routes-status.svg)](https://gemnasium.com/codedoctor/hapi-routes-status)
-
-
-
 [![NPM Downloads](http://img.shields.io/npm/dm/hapi-routes-status.svg)](https://www.npmjs.org/package/hapi-routes-status)
 [![Issues](http://img.shields.io/github/issues/codedoctor/hapi-routes-status.svg)](https://github.com/codedoctor/hapi-routes-status/issues)
 [![HAPI 6.0](http://img.shields.io/badge/hapi-6.0-blue.svg)](http://hapijs.com)
 [![API Documentation](http://img.shields.io/badge/API-Documentation-ff69b4.svg)](http://coffeedoc.info/github/codedoctor/hapi-routes-status)
-
-
 
 (C) 2014 Martin Wawrusch
 
