@@ -6,12 +6,18 @@ module.exports = (plugin, options) ->
     config:
       auth: false
     handler: (request, reply) ->
-      reply
-        app: options.app
-        running: true
-        uptime: process.uptime()
-        memoryUsage: process.memoryUsage()
-        versions: process.versions
-        droneId: process.pid
 
+      if request.info.host is options.localhost
+        reply
+          app: options.app
+          running: true
+          uptime: process.uptime()
+          memoryUsage: process.memoryUsage()
+          versions: process.versions
+          droneId: process.pid
+      else
+        reply
+          app: options.app
+          running: true
+          uptime: process.uptime()
 
