@@ -1,16 +1,23 @@
 
-module.exports = (plugin) ->
+module.exports = (plugin, options) ->
   plugin.route
-    path: '/status'
+    path: options.path || '/status'
     method: 'GET'
     config:
       auth: false
     handler: (request, reply) ->
-      reply 
-        running: true
-        uptime: process.uptime()
-        memoryUsage: process.memoryUsage()
-        versions: process.versions
-        droneId: process.pid
 
+      if request.info.host is options.localhost
+        reply
+          app: options.app
+          running: true
+          uptime: process.uptime()
+          memoryUsage: process.memoryUsage()
+          versions: process.versions
+          droneId: process.pid
+      else
+        reply
+          app: options.app
+          running: true
+          uptime: process.uptime()
 
