@@ -6,7 +6,8 @@ module.exports = (plugin, options) ->
     config:
       auth: false
     handler: (request, reply) ->
-      reply 
+      reply
+        app: options.app
         running: true
         uptime: process.uptime()
         memoryUsage: process.memoryUsage()
