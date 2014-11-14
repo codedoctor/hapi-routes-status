@@ -1,7 +1,7 @@
 
-module.exports = (plugin) ->
+module.exports = (plugin, options) ->
   plugin.route
-    path: '/status'
+    path: options.path || '/status'
     method: 'GET'
     config:
       auth: false
